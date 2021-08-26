@@ -21,19 +21,31 @@ void Game() {
 	Initialize(&f, ROWS, COLS, '*');
 	//埋雷
 	Putmine(&j, ROW, COL); 
+<<<<<<< HEAD
 	//打印外显棋盘
 	Printf(&f, ROW, COL);
+=======
+>>>>>>> ca7cbac65f3795dc7769d18c7995bb93483fd34d
 	int d = 0;
 	do
 	{	
 		
 		 //打印内棋盘
 		// Nei(&j, ROWS, COLS);
+<<<<<<< HEAD
 		
 		////玩家排雷
 		 Plisyer(&j,&f,ROW,COL);
 		 //打印内棋盘
 		// Nei(&j, ROWS, COLS);
+=======
+		//打印外显棋盘
+		 Printf(&f,ROW,COL);
+		////玩家排雷
+		 Plisyer(&j,&f,ROW,COL);
+		 //打印内棋盘
+		 Nei(&j, ROWS, COLS);
+>>>>>>> ca7cbac65f3795dc7769d18c7995bb93483fd34d
 		 //打印外显棋盘
 		 Printf(&f, ROW, COL);
 		////判断是否结束
@@ -204,7 +216,11 @@ void showadd(char(*j)[ROWS][COLS], char(*f)[ROWS][COLS], int row, int col, int a
 
 //玩家查看雷阵
 void Look(char(*j)[ROWS][COLS], int row, int col) {
+<<<<<<< HEAD
 	printf("亲，你已身亡，以下是全部雷的位置\n");
+=======
+	printf("亲，你已有身亡，以下是全部雷的位置\n");
+>>>>>>> ca7cbac65f3795dc7769d18c7995bb93483fd34d
 	printf("雷数#：10\n");
 	for (int k = 0; k <= col; k++) {
 		printf(" %d", k);
